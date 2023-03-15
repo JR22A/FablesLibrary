@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Digital Bookshelf</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+  .bookshelf {
+  width: 900px;
+  margin: 5rem auto;
+  text-align: center;
+  position: relative;
+}
+
+.book-grid {
+  z-index: 2;
+  position: relative;
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+}
+.book-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.book-grid ul li {
+  justify-self: center;
+}
+.book-grid ul img {
+  display: block;
+  box-shadow: 0px -5px 20px 2px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.shelf-shadows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  border-radius: 2px;
+  z-index: 1;
+  box-shadow: 0px -5px 3px 0px rgba(255, 187, 0, 0.2), 0px 15px 20px 0px rgb(255, 199, 77), 0px 5px 5px 0px rgba(119, 119, 119, 0.3);
+}
+
+.shelf {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+  background-color: #461818;
+  border-radius: 2px;
+  z-index: 3;
+}
+body{
+  background-image: url(images/10744723.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+h2{
+  text-align: center;
+  color: rgb(255, 196, 0);
+  font-size: xx-large;
+}
+
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="bookshelf">
+  <div class="book-grid">
+    <h2>SOCIETY SECTION</h2>
+    <ul>
+      <li> <a href="The Fox,TheDonkey&TheStag.html"><img src="images/cza&kritina.jpg"/></a></li>
+      <li> <a href="LoyalStory.HTML"><img src="images/cza&kritina.jpg"/></a></li>
+      <li> <a href="TheDogsandtheCats.html"><img src="images/celina.jpg"/></a></li>
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <h2>GREEDINESS SECTION</h2>
+    <ul>
+    
+      <li> <a href="EliJourney.html"><img src="https://images-na.ssl-images-amazon.com/images/I/51uLvJlKpNL._SX321_BO1,204,203,200_.jpg"/></a></li>
+      <li> <a href="TheRealWealth.html"><img src="https://images-na.ssl-images-amazon.com/images/I/51uLvJlKpNL._SX321_BO1,204,203,200_.jpg"/></a></li>
+   
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+<div class="bookshelf">
+  <div class="book-grid">
+    <h2>THE LIFE OF OWL</h2>
+    <ul>
+  
+      <li> <a href="THEBLOODYPROMISE.html"><img src="images/“THE BLOODY PROMISE”.jpg"/></a></li>
+      <li> <a href="TheIronyofLove.html"><img src="images/the irony of love.jpg"/></a></li>
+    
+    </ul>
+  </div>
+  <div class="shelf-shadows"></div>
+  <div class="shelf"></div>
+</div>
+
+<audio controls autoplay style="opacity: 0;">
+  <source src="music/bgmfinal.mp3" type="audio/ogg">
+  <source src="music/bgmfinal.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<!-- partial -->
+  
+</body>
+</html>
